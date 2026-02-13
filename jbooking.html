@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Ticket - Ayoush Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">AYOUSH <span>TRAVEL</span></div>
+        <nav>
+    
+    <a href="index.html">Home</a>
+    <a href="jabout.html">About Us</a>
+    <a href="jcontact.html">Contact Us</a>
+    <a href="services.html">Services</a>
+    <a href="my-trips.html" id="cart-icon" style="text-decoration: none; color: white;">
+        🛒 <span id="cart-count">0</span> </a>
+        </nav>
+        <div class="clear"></div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="ticket-card" style="max-width: 600px; margin: 50px auto; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.2); border: none;">
+            
+            <div class="ticket-header" style="background: linear-gradient(135deg, #2c3e50, #34495e); color: white; padding: 30px; text-align: center; border-bottom: 5px solid #3498db;">
+                <i class="fas fa-plane-departure" style="font-size: 40px; margin-bottom: 15px; color: #3498db;"></i>
+                <h2 style="letter-spacing: 2px; margin: 0;">BOARDING PASS</h2>
+                <p style="text-transform: uppercase; font-size: 14px; opacity: 0.8; margin-top: 5px;">Ayoush Luxury Tours & Travels</p>
+            </div>
+
+            <div class="ticket-body" style="padding: 40px; background: white; position: relative;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+                    <div>
+                        <small style="color: #999; text-transform: uppercase; display: block;">Passenger Name</small>
+                        <span id="ticket-passenger-name" style="font-weight: bold; font-size: 18px; color: #2c3e50;">Ayoush Guest</span>
+                    </div>
+                    <div style="text-align: right;">
+                        <small style="color: #999; text-transform: uppercase; display: block;">Passport No.</small>
+                        <span id="ticket-passport" style="font-weight: bold; font-size: 16px; color: #2c3e50;">A0000000</span>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
+                    <div>
+                        <small style="color: #999; text-transform: uppercase; display: block;">Carrier</small>
+                        <span id="ticket-airline" style="font-weight: bold; color: #e67e22;"><i class="fas fa-plane"></i> EgyptAir</span>
+                    </div>
+                    <div style="text-align: right;">
+                        <small style="color: #999; text-transform: uppercase; display: block;">Travel Date</small>
+                        <span id="ticket-date" style="font-weight: bold; color: #2c3e50;">2026-02-15</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <small style="color: #999; text-transform: uppercase; display: block;">Selected Destinations</small>
+                    <div id="ticket-trips" style="margin-top: 10px; color: #3498db; font-weight: bold; font-size: 16px; background: #f0f7ff; padding: 10px; border-radius: 8px;">
+                        No destinations selected.
+                    </div>
+                </div>
+
+                <div style="position: absolute; bottom: 40px; right: 40px; border: 3px double #27ae60; color: #27ae60; padding: 5px 15px; border-radius: 5px; transform: rotate(-15deg); font-weight: bold; opacity: 0.6;">
+                    CONFIRMED ✅
+                </div>
+            </div>
+
+            <div style="background: #f8f9fa; padding: 20px; text-align: center; border-top: 2px dashed #ddd;">
+                <i class="fas fa-barcode" style="font-size: 50px; color: #333; letter-spacing: 5px;"></i>
+                <p style="font-size: 10px; color: #999; margin-top: 10px;">PLEASE PRESENT THIS DIGITAL PASS AT THE CHECK-IN COUNTER</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 50px; display: flex; justify-content: center; gap: 20px;">
+            <button class="btn" onclick="window.print()" style="padding: 12px 30px;"><i class="fas fa-print"></i> Print Ticket</button>
+            <a href="index.html" class="delete-btn" style="text-decoration: none; display: inline-block; padding: 12px 30px; background: #95a5a6;"><i class="fas fa-home"></i> Back Home</a>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-box">
+            <h3>Ayoush Travel</h3>
+            <p>Your trusted partner for luxury travel and unforgettable adventures since 2026.</p>
+        </div>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jabout.html">About Us</a></li>
+                <li><a href="jcontact.html">Contact Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <!-- <li><a href="jbooking-form.html">Book Now</a></li> -->
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+            <p>📍 Cairo, Egypt</p>
+            <p>📞 +20 123 456 789</p>
+            <p>✉️ info@ayoush.com</p>
+        </div>
+        <div class="clear"></div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AYOUSH TRAVEL CENTER. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

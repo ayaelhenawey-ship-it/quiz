@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Ayoush Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">AYOUSH <span>TRAVEL</span></div>
+        <nav>
+    
+    <a href="index.html">Home</a>
+    <a href="jabout.html">About Us</a>
+    <a href="jcontact.html">Contact Us</a>
+    <a href="services.html">Services</a>
+    <a href="my-trips.html" id="cart-icon" style="text-decoration: none; color: white;">
+        🛒 <span id="cart-count">0</span> </a>
+        </nav>
+        <div class="clear"></div>
+    </div>
+</header>
+<main>
+    <section class="hero" style="min-height: 200px;">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We are here to help you plan your next adventure.</p>
+        </div>
+    </section>
+
+    <div class="container" style="padding: 50px 0;">
+        <div class="contact-wrapper" style="display: flex; gap: 40px; flex-wrap: wrap;">
+            
+            <div class="contact-form" style="flex: 2; min-width: 300px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                <h2 style="margin-bottom: 20px; color: #2c3e50;">Send Us a Message</h2>
+                <form id="contact-me">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Enter your name" style="width: 100%; padding: 12px; margin-top: 8px; border: 1px solid #ddd; border-radius: 8px;">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="email@example.com" style="width: 100%; padding: 12px; margin-top: 8px; border: 1px solid #ddd; border-radius: 8px;">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="How can we help you?" style="width: 100%; padding: 12px; margin-top: 8px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;"></textarea>
+                    </div>
+                    <button type="button" class="btn" style="width: 100%; margin-top: 10px;">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info" style="flex: 1; min-width: 300px; background: #f8f9fa; padding: 30px; border-radius: 15px;">
+                <h2 style="margin-bottom: 20px; color: #2c3e50;">Contact Details</h2>
+                <div style="margin-bottom: 15px;">
+                    <p><strong><i class="fas fa-map-marker-alt" style="color: #3498db;"></i> Office:</strong><br> 123 Travel St, Cairo, Egypt</p>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <p><strong><i class="fas fa-phone" style="color: #3498db;"></i> Phone:</strong><br> +20 123 456 789</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <p><strong><i class="fas fa-envelope" style="color: #3498db;"></i> Email:</strong><br> support@ayoush.com</p>
+                </div>
+                
+                <div id="user-location" style="margin-bottom: 20px; color: #3498db; font-weight: bold; font-size: 14px;">
+                    </div>
+
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.60389525126!2d31.18842361640625!3d30.059483800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296511f3b75!2sCairo%2C%20Egypt!5e0!3m2!1sen!2s!4v1700000000000" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0; border-radius:10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-box">
+            <h3>Ayoush Travel</h3>
+            <p>Your trusted partner for luxury travel and unforgettable adventures since 2026.</p>
+        </div>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jabout.html">About Us</a></li>
+                <li><a href="jcontact.html">Contact Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <!-- <li><a href="jbooking-form.html">Book Now</a></li> -->
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+            <p>📍 Cairo, Egypt</p>
+            <p>📞 +20 123 456 789</p>
+            <p>✉️ info@ayoush.com</p>
+        </div>
+        <div class="clear"></div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AYOUSH TRAVEL CENTER. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script> if (navigator.geolocation) {
+   
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+} else {
+    alert("Geolocation is not supported by this browser.");
+} 
+function showPosition(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    console.log("Latitude: " + lat + " | Longitude: " + lon);
+    alert("Welcome! Your coordinates are: \nLat: "+ position);
+}
+function showError(error) {
+    alert("Error getting location: " + error.message);
+}
+</script>
+</body>
+</html>

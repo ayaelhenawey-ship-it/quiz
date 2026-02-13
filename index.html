@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayoush Travel - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">AYOUSH <span>TRAVEL</span></div>
+        <nav>
+    
+    <a href="index.html">Home</a>
+    <a href="jabout.html">About Us</a>
+    <a href="jcontact.html">Contact Us</a>
+    <a href="services.html">Services</a>
+    <a href="my-trips.html" id="cart-icon" style="text-decoration: none; color: white;">
+        🛒 <span id="cart-count">0</span> </a>
+        </nav>
+        <div class="clear"></div>
+    </div>
+</header>
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1>Explore The World With Ayoush</h1>
+            <p>Drag your favorite trip to the bag below or view details to learn more.</p>
+        <div id="colorPalette">
+        <label>Choose Theme Color:</label>
+        <button style="background-color: #f5f5f5;" data-color="#f5f5f5"></button>
+        <button style="background-color: #270e79;" data-color="#270e79"></button>
+        <button style="background-color: #c2f0ff;" data-color="#c2f0ff"></button>
+        <button style="background-color: #d5ffc2;" data-color="#d5ffc2"></button>
+    </div>
+        </div>
+    </section>
+    <section class="container">
+        <h2 style="text-align:center; margin-top:30px;">Featured Destinations</h2>
+
+        <div class="trips-grid">
+            <div class="trip-item" draggable="true" data-name="Paris - $1200">
+                <div class="card-inner">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400" alt="Paris">
+                    <h3>Paris, France</h3>
+                    
+                    <div class="details-overlay">
+                        <h3>Trip Itinerary</h3>
+                        <table class="details-table">
+                            <tr><th>Duration</th><td>5 Days / 4 Nights</td></tr>
+                            <tr><th>Visits</th><td>Eiffel Tower, Louvre</td></tr>
+                            <tr><th>Hotel</th><td>5 Stars Center</td></tr>
+                        </table>
+                        <button class="btn close-info">Back</button>
+                    </div>
+
+                    <button class="btn-more">View Details</button>
+                    <p style="font-size: 12px; color: #7f8c8d; margin-bottom: 10px;">Drag to Bag</p>
+                </div>
+            </div>
+
+            <div class="trip-item" draggable="true" data-name="Venice - $1450">
+                <div class="card-inner">
+                    <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400" alt="Venice">
+                    <h3>Venice, Italy</h3>
+                    <div class="details-overlay">
+                        <h3>Trip Itinerary</h3>
+                        <table class="details-table">
+                            <tr><th>Duration</th><td>4 Days / 3 Nights</td></tr>
+                            <tr><th>Visits</th><td>Grand Canal, Gondola</td></tr>
+                            <tr><th>Hotel</th><td>Canal View Luxury</td></tr>
+                        </table>
+                        <button class="btn close-info">Back</button>
+                    </div>
+                    <button class="btn-more">View Details</button>
+                    <p style="font-size: 12px; color: #7f8c8d; margin-bottom: 10px;">Drag to Bag</p>
+                </div>
+            </div>
+
+            <div class="trip-item" draggable="true" data-name="Dubai - $2100">
+                <div class="card-inner">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400" alt="Dubai">
+                    <h3>Dubai, UAE</h3>
+                    <div class="details-overlay">
+                        <h3>Trip Itinerary</h3>
+                        <table class="details-table">
+                            <tr><th>Duration</th><td>6 Days / 5 Nights</td></tr>
+                            <tr><th>Visits</th><td>Burj Khalifa, Safari</td></tr>
+                            <tr><th>Hotel</th><td>Atlantis The Palm</td></tr>
+                        </table>
+                        <button class="btn close-info">Back</button>
+                    </div>
+                    <button class="btn-more">View Details</button>
+                    <p style="font-size: 12px; color: #7f8c8d; margin-bottom: 10px;">Drag to Bag</p>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="trip-item" draggable="true" data-name="London - $1800">
+                <div class="card-inner">
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400" alt="London">
+                    <h3>London, UK</h3>
+                    <div class="details-overlay">
+                        <h3>Trip Itinerary</h3>
+                        <table class="details-table">
+                            <tr><th>Duration</th><td>5 Days / 4 Nights</td></tr>
+                            <tr><th>Visits</th><td>Big Ben, London Eye</td></tr>
+                            <tr><th>Hotel</th><td>The Savoy</td></tr>
+                        </table>
+                        <button class="btn close-info">Back</button>
+                    </div>
+                    <button class="btn-more">View Details</button>
+                    <p style="font-size: 12px; color: #7f8c8d; margin-bottom: 10px;">Drag to Bag</p>
+                </div>
+            </div>
+
+            <div class="trip-item" draggable="true" data-name="Maldives - $3000">
+                <div class="card-inner">
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=400" alt="Maldives">
+                    <h3>Maldives</h3>
+                    <div class="details-overlay">
+                        <h3>Trip Itinerary</h3>
+                        <table class="details-table">
+                            <tr><th>Duration</th><td>7 Days / 6 Nights</td></tr>
+                            <tr><th>Visits</th><td>Private Island, Spa</td></tr>
+                            <tr><th>Hotel</th><td>Overwater Bungalow</td></tr>
+                        </table>
+                        <button class="btn close-info">Back</button>
+                    </div>
+                    <button class="btn-more">View Details</button>
+                    <p style="font-size: 12px; color: #7f8c8d; margin-bottom: 10px;">Drag to Bag</p>
+                </div>
+            </div>
+
+            <div class="trip-item" draggable="true" data-name="Tokyo - $2500">
+                <div class="card-inner">
+                    <img src="https://media.istockphoto.com/id/509706975/photo/tokyo-japan-at-minato.webp?a=1&b=1&s=612x612&w=0&k=20&c=sPi9N3_d5OahpqiMblNa82lzFF6McqfkMoxm5GKunu4=" alt="Tokyo">
+                    <h3>Tokyo, Japan</h3>
+                    <div class="details-overlay">
+                        <h3>Trip Itinerary</h3>
+                        <table class="details-table">
+                            <tr><th>Duration</th><td>8 Days / 7 Nights</td></tr>
+                            <tr><th>Visits</th><td>Mount Fuji, Temples</td></tr>
+                            <tr><th>Hotel</th><td>Park Hyatt</td></tr>
+                        </table>
+                        <button class="btn close-info">Back</button>
+                    </div>
+                    <button class="btn-more">View Details</button>
+                    <p style="font-size: 12px; color: #7f8c8d; margin-bottom: 10px;">Drag to Bag</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div id="dropzone">
+            <h3>🛍️ Your Travel Bag (Drop Here)</h3>
+            <div id="cart-items"></div>
+        </div>
+
+        <div style="text-align:center; margin-bottom: 50px;">
+            <button class="btn" onclick="location.href='jbooking-form.html'">Proceed to Checkout</button>
+            <button class="delete-btn" onclick="clearCart()">Empty Bag</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-box">
+            <h3>Ayoush Travel</h3>
+            <p>Your trusted partner for luxury travel and unforgettable adventures since 2026.</p>
+        </div>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jabout.html">About Us</a></li>
+                <li><a href="jcontact.html">Contact Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+            <p>📍 Cairo, Egypt</p>
+            <p>📞 +20 123 456 789</p>
+            <p>✉️ info@ayoush.com</p>
+        </div>
+        <div class="clear"></div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AYOUSH TRAVEL CENTER. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
