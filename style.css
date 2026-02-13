@@ -1,8 +1,12 @@
 /* --- Global Styles --- */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-html, body { height: 100%; }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -10,10 +14,14 @@ body {
     background-color: #f4f7f6;
     transition: background 0.4s ease;
 }
-
-.container { width: 1100px; margin: 0 auto; position: relative; }
-.clear { clear: both; }
-
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.clear {
+    clear: both;
+}
 /* --- Header --- */
 header {
     background: #2c3e50;
@@ -21,14 +29,29 @@ header {
     padding: 20px 0;
     flex-shrink: 0;
 }
-
-.logo { float: left; font-size: 26px; font-weight: bold; letter-spacing: 1px; }
-.logo span { color: #3498db; }
-
-nav { float: right; margin-top: 5px; }
-nav a { color: white; text-decoration: none; margin-left: 25px; font-weight: bold; transition: 0.3s; }
-nav a:hover { color: #3498db; }
-
+.logo {
+    float: left;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.logo span {
+    color: #3498db;
+}
+nav {
+    float: right;
+    margin-top: 5px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #3498db;
+}
 #cart-icon {
     display: inline-block;
     margin-left: 20px;
@@ -37,7 +60,6 @@ nav a:hover { color: #3498db; }
     border-radius: 20px;
     position: relative;
 }
-
 #cart-count {
     position: absolute;
     top: -10px;
@@ -45,116 +67,174 @@ nav a:hover { color: #3498db; }
     background: #e67e22;
     color: white;
     font-size: 12px;
-    padding: 2px 7px; border-radius: 50%;
+    padding: 2px 7px;
+    border-radius: 50%;
 }
-
 /* --- Main Content --- */
-main { flex: 1 0 auto; }
-
-.hero { background: #34495e; color: white; text-align: center; padding: 60px 0; }
-
-#colorPalette { margin-top: 20px; }
-#colorPalette button {
-    width: 30px; height: 30px; border: 2px solid white;
-    border-radius: 50%; cursor: pointer; margin: 0 5px; transition: transform 0.2s;
+main {
+    flex: 1 0 auto;
 }
-#colorPalette button:hover { transform: scale(1.2); }
-
-/* --- Trips Grid (تعديل الكاردات عشان تظبط) --- */
-.trips-grid { margin-top: 40px; overflow: hidden; }
-
+.hero {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+#colorPalette {
+    margin-top: 20px;
+}
+#colorPalette button {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: transform 0.2s;
+}
+#colorPalette button:hover {
+    transform: scale(1.2);
+}
+.trips-grid {
+    margin-top: 40px;
+    overflow: hidden;
+}
 .trip-item {
     float: left;
-    width: 30%; 
+    width: 30%;
     margin: 1.5%;
     background: white;
     padding: 15px;
     border: 2px dashed #3498db;
     text-align: center;
     border-radius: 10px;
-    transition: 0.3s;
-    height: 450px; /* المقاس اللي طلبتيه */
-    position: relative; /* مهم عشان الستارة */
+    transition: all 0.3s;
+    height: 450px;
+    position: relative;
     overflow: hidden;
 }
-
 .trip-item img {
-    width: 100%; height: 200px; 
-    object-fit: cover; border-radius: 8px;
-    margin-bottom: 10px; pointer-events: none;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    pointer-events: none;
 }
-
-/* --- الستارة (Details Overlay) --- */
 .details-overlay {
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(44, 62, 80, 0.95);
     color: white;
-    display: none; /* بتظهر بالـ JS */
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px;
     z-index: 10;
 }
-
 /* --- Dropzone --- */
 #dropzone {
-    clear: both; width: 100%; min-height: 150px;
-    border: 3px dashed #2c3e50; margin: 40px 0;
-    padding: 30px; background: rgba(255,255,255,0.7);
-    text-align: center; border-radius: 15px;
+    clear: both;
+    width: 100%;
+    min-height: 150px;
+    border: 3px dashed #2c3e50;
+    margin: 40px 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    border-radius: 15px;
 }
-
 .booked-item {
-    background: #3498db; color: white; padding: 10px 15px;
-    margin: 10px; display: inline-block; border-radius: 5px; font-weight: bold;
-}
-
-/* --- Footer --- */
- /* Footer */
-
-footer {
-
-    background: #2c3e50;
-
+    background: #3498db;
     color: white;
-
-    padding: 50px 0 20px 0;
-
-    flex-shrink: 0;
-
+    padding: 10px 15px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
 }
-
-.footer-box { float: left; width: 30%; margin: 0 1.5%; }
-
-.footer-box h3 { color: #3498db; margin-bottom: 20px; }
-
-.footer-box p, .footer-box a { color: #bdc3c7; font-size: 14px; line-height: 1.8; text-decoration: none; }
-
-.footer-links { list-style: none; }
-
-.footer-links li { margin-bottom: 10px; }
-
-.footer-bottom { clear: both; text-align: center; border-top: 1px solid #3e4f5f; margin-top: 40px; padding-top: 20px; font-size: 13px; color: #7f8c8d; }
-.footer-box { float: left; width: 30%; margin: 0 1.5%; }
-.footer-box h3 { color: #3498db; margin-bottom: 20px; }
-.footer-bottom { clear: both; text-align: center; border-top: 1px solid #3e4f5f; margin-top: 40px; padding-top: 20px; }
-
-.about-flex { display: flex; align-items: center; gap: 40px; }
-.about-text { flex: 1; }
-.about-img { flex: 1; }
-.about-img img { width: 100%; border-radius: 15px; }
-.stats { display: flex; justify-content: space-around; margin-top: 30px; background: rgba(167, 186, 252, 0.89); padding: 20px 0; border-radius: 10px; }
-.stat-item { text-align: center; }
-.stat-item h2 { color: #3498db; font-size: 28px; margin-bottom: 5px; }
-.stat-item p { color: #7f8c8d; font-size: 14px;}
-
-.btn { background: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; margin: 5px; }
-.btn-more { background: #2980b9; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; margin: 5px; }
-.delete-btn { background: #e74c3c; color: white; padding: 12px 30px; border: none; border-radius: 5px; cursor: pointer; }
+/* --- Buttons --- */
+.btn {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+}
+.btn-more {
+    background: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+}
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* --- Tables --- */
 .details-table {
-    width: 100%; border-collapse: collapse; margin-bottom: 10px;
-    background: rgba(255,255,255,0.1); font-size: 12px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 12px;
 }
-.details-table th, .details-table td { padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: left; }
+.details-table th,
+.details-table td {
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+/* --- Footer --- */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 50px 0 20px 0;
+    flex-shrink: 0;
+}
+.footer-box {
+    float: left;
+    width: 30%;
+    margin: 0 1.5%;
+}
+.footer-box h3 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+.footer-box p,
+.footer-box a {
+    color: #bdc3c7;
+    font-size: 14px;
+    line-height: 1.8;
+    text-decoration: none;
+}
+.footer-links {
+    list-style: none;
+}
+.footer-links li {
+    margin-bottom: 10px;
+}
+.footer-bottom {
+    clear: both;
+    text-align: center;
+    border-top: 1px solid #3e4f5f;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #7f8c8d;
+}
